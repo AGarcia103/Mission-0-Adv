@@ -21,7 +21,6 @@ function HomeContent () {
       width: "100%"
       }}>
   
- 
     <Typography gutterBottom variant="h4" component="div" 
       sx={{
       fontFamily: "Poppins", 
@@ -38,13 +37,11 @@ function HomeContent () {
         Let's build it right
     </Typography>
   
-
     <Container disableGutters={true} maxWidth={false}
       sx={{
         display: "flex",
-     
         justifyContent: "center",
-        marginTop: "150px",
+        marginTop: "170px",
         }}>
     
     <TextField
@@ -61,11 +58,8 @@ function HomeContent () {
     <Button 
       sx={{  
         display: "flex",
-    
         backgroundColor: "#4a0a0a", 
-       
         color: "#FFFFFF",
-      
         padding: "1px 15px",
         width: "155px",
         height: "40px",
@@ -80,7 +74,7 @@ function HomeContent () {
     <Container disableGutters={true} maxWidth={false}
         sx={{
           display: "flex",
-          marginTop: "110px",
+          marginTop: "95px",
           textAlign: "center",
           justifyContent: "center"
           }}>
@@ -99,7 +93,6 @@ function HomeContent () {
           sx={{color: "#4a0a0a"}}>
           Quality
         </Typography>
-        
       </CardContent>
     </Card>
 
@@ -117,9 +110,9 @@ function HomeContent () {
           sx={{color: "#4a0a0a"}}>
           Safety
         </Typography>
-        
       </CardContent>
     </Card>
+
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         component="img"
@@ -134,7 +127,6 @@ function HomeContent () {
           sx={{color: "#4a0a0a"}}>
           Reliability
         </Typography>
-        
       </CardContent>
     </Card>
     </Container>
@@ -163,7 +155,6 @@ function HomeContent () {
           sx={{color: "#4a0a0a"}}>
           Integrity
         </Typography>
-        
       </CardContent>
     </Card>
 
@@ -181,9 +172,9 @@ function HomeContent () {
           sx={{color: "#4a0a0a"}}>
           Transparency
         </Typography>
-        
       </CardContent>
     </Card>
+
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         component="img"
@@ -198,10 +189,8 @@ function HomeContent () {
           sx={{color: "#4a0a0a"}}>
           Creativity
         </Typography>
-        
       </CardContent>
     </Card>
-
     </Container>
 
   {/* ---------- FOOTER ---------- */}
@@ -211,7 +200,6 @@ function HomeContent () {
           height: "50px",
           marginTop: "50px",
           textAlign: "center",
-          
           color: "#4a0a0a"}}>
       <Typography>
       Copyright 2022 &copy; Next Level Homes

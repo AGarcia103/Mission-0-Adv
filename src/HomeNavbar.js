@@ -1,58 +1,62 @@
-import * as React from 'react';
-import { Box } from '@mui/material';
-import Typography from '@mui/material/Typography';
+import { useState } from "react";
+import LoginModal from "./HomeLogin";
+import "./App.css";
 
+export default function Navbar2 () {
+  const [isNavExpanded, setIsNavExpanded] = useState(false);
 
-export default function Navbar () {
   return (
-    <Box>
-      <div
-        style={{
-          position: "relative",
-          backgroundColor: "#FFFFFF",
-          display: "flex",
-          color: "#4a0a0a",
-          justifyContent: "space-between",
-         
-        
-        }}
-      >
-        <img
+    <nav className="navigation">
+      <a href="/" className="brand-name">
+      <img
           width="190px"
           height="70px"
           className="logo"
           src="/images/NewLogo.jpg"
           alt="Next Level Homes Logo"
         />
-        <div
-          className="nav" id="nav-bar"
-          style={{
-            display: "flex",
-            justifyContent: "space-evenly",
-            textAlign: "right",
-            alignItems: "right",
-            width: "40%",
-            marginTop: "20px",
-            color: "#4a0a0a",
-          }}
+      </a>
+      <button
+        className="hamburger"
+        onClick={() => {
+          setIsNavExpanded(!isNavExpanded);
+        }}
+      >
+        {/* icon from Heroicons.com */}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-5 w-5"
+          viewBox="0 0 20 20"
+          fill="white"
         >
-          <Typography  component="div">
-            DESIGNS
-          </Typography>
-
-          <Typography component="div">
-            LOCATIONS
-          </Typography>
-
-          <Typography component="div">
-              ABOUT US
-          </Typography>
-
-          <Typography component="div">
-              LOGIN
-          </Typography>
-        </div>
+          <path
+            fillRule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+            clipRule="evenodd"
+          />
+        </svg>
+      </button>
+      <div
+        className={
+          isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
+        }
+      >
+        <ul>
+          <li>
+            <a href="/home">Designs</a>
+          </li>
+          <li>
+            <a href="/about">Showhomes</a>
+          </li>
+          <li>
+            <a href="/about">Locations</a>
+          </li>
+          <li>
+            <a href="/contact">About Us</a>
+          </li>
+          <LoginModal />
+        </ul>
       </div>
-    </Box>
+    </nav>
   );
 }
