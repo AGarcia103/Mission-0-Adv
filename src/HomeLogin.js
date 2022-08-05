@@ -188,11 +188,7 @@ function LoginModal() {
               </Button>
 
             </Stack>
-            
-                
-                
-                
-                
+          
             <Backdrop open={backDropOpen}>
               <CircularProgress />
             </Backdrop>

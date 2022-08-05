@@ -29,7 +29,7 @@ function HomeContent () {
       sx={{
       fontFamily: "Poppins", 
       color: "#FFFFFF",
-      paddingTop: "120px",
+      paddingTop: "100px",
       textAlign: "center"
       }}>
      
@@ -45,7 +45,7 @@ function HomeContent () {
       sx={{
         display: "flex",
         justifyContent: "center",
-        marginTop: "190px",
+        marginTop: "170px",
         }}>
     
     <TextField
@@ -78,7 +78,7 @@ function HomeContent () {
     <Container disableGutters={true} maxWidth={false}
         sx={{
           display: "flex",
-          marginTop: "140px",
+          marginTop: "190px",
           textAlign: "center",
           justifyContent: "center"
           }}>
