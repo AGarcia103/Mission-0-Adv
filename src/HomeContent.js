@@ -1,10 +1,14 @@
 import React from 'react';
 import { Box, Container, TextField, Button } from '@mui/material';
+//import { experimentalStyled as styled } from '@mui/material/styles';
+//import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
+//import Card from '@mui/material/Card';
+//import CardContent from '@mui/material/CardContent';
+//import CardMedia from '@mui/material/CardMedia';
 import Main1 from "./Main1.jpg";
+
+
 
 
 function HomeContent () {
@@ -78,119 +82,63 @@ function HomeContent () {
           textAlign: "center",
           justifyContent: "center"
           }}>
-    
-    <Card sx={{ maxWidth: 345, paddingRight: "20px" }}>
-      <CardMedia
-        component="img"
-        src="/images/Card1.jpg" 
-        alt="House/Project1" 
-        height="325px" 
-        width="370px"
-        sx={{display: "flex", width: "100%"}}
-      />
-      <CardContent >
-        <Typography gutterBottom variant="h5" component="div"
-          sx={{color: "#4a0a0a"}}>
-          Quality
-        </Typography>
-      </CardContent>
-    </Card>
+        <div class="container">
+            <img id="1"
+                src="/images/Card1.jpg" 
+                alt="House/Project1" 
+                height="325px" 
+                width="370px"
+                />
+                
+            <img id="2"
+                src="/images/Card2.jpg" 
+                alt="House/Project2" 
+                height="325px" 
+                width="370px"
+                />
 
-    <Card sx={{ maxWidth: 345, paddingRight: "20px" }}>
-      <CardMedia
-        component="img"
-        src="/images/Card2.jpg" 
-        alt="House/Project2" 
-        height="325px" 
-        width="370px"
-        sx={{display: "flex", width: "100%"}}
-      />
-      <CardContent >
-        <Typography gutterBottom variant="h5" component="div"
-          sx={{color: "#4a0a0a"}}>
-          Safety
-        </Typography>
-      </CardContent>
-    </Card>
-
-    <Card sx={{ maxWidth: 345 }}>
-      <CardMedia
-        component="img"
-        src="/images/Card3.jpg" 
-        alt="House/Project3" 
-        height="325px" 
-        width="370px"
-        sx={{display: "flex", width: "100%"}}
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div"
-          sx={{color: "#4a0a0a"}}>
-          Reliability
-        </Typography>
-      </CardContent>
-    </Card>
+            <img id="3"
+                src="/images/Card3.jpg" 
+                alt="House/Project3" 
+                height="325px" 
+                width="370px"
+                />
+            
+        </div>       
     </Container>
 
   {/* ------- SECOND CARD CONTAINER ------- */}
 
-    <Container disableGutters={true} maxWidth={false}
+  <Container disableGutters={true} maxWidth={false}
         sx={{
           display: "flex",
-          marginTop: "50px",
+          marginTop: "40px",
           textAlign: "center",
           justifyContent: "center"
           }}>
-    
-    <Card sx={{ maxWidth: 345, paddingRight: "20px" }}>
-      <CardMedia
-        component="img"
-        src="/images/Card4.jpg" 
-        alt="House/Project4" 
-        height="325px" 
-        width="370px"
-        sx={{display: "flex", width: "100%"}}
-      />
-      <CardContent >
-        <Typography gutterBottom variant="h5" component="div"
-          sx={{color: "#4a0a0a"}}>
-          Integrity
-        </Typography>
-      </CardContent>
-    </Card>
+        <div class="container">
+            <img id="1"
+                src="/images/Card4.jpg" 
+                alt="House/Project1" 
+                height="325px" 
+                width="370px"
+                />
+                
+            <img id="2"
+                src="/images/Card5.jpg" 
+                alt="House/Project2" 
+                height="325px" 
+                width="370px"
+                />
 
-    <Card sx={{ maxWidth: 345, paddingRight: "20px" }}>
-      <CardMedia
-        component="img"
-        src="/images/Card5.jpg" 
-        alt="House/Project5" 
-        height="325px" 
-        width="370px"
-        sx={{display: "flex", width: "100%"}}
-      />
-      <CardContent >
-        <Typography gutterBottom variant="h5" component="div"
-          sx={{color: "#4a0a0a"}}>
-          Transparency
-        </Typography>
-      </CardContent>
-    </Card>
-
-    <Card sx={{ maxWidth: 345 }}>
-      <CardMedia
-        component="img"
-        src="/images/Card6.jpg" 
-        alt="House/Project" 
-        height="325px" 
-        width="370px"
-        sx={{display: "flex", width: "100%"}}
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div"
-          sx={{color: "#4a0a0a"}}>
-          Creativity
-        </Typography>
-      </CardContent>
-    </Card>
+            <img id="3"
+                src="/images/Card6.jpg" 
+                alt="House/Project3" 
+                height="325px" 
+                width="370px"
+                />
+            
+        </div>       
     </Container>
 
   {/* ---------- FOOTER ---------- */}
