@@ -25,12 +25,12 @@ function HomeContent () {
       width: "100%"
       }}>
   
-    <Typography gutterBottom variant="h4" component="div" 
+    <Typography gutterBottom variant="h3" component="div" 
       sx={{
       fontFamily: "Poppins", 
       color: "#FFFFFF",
-      paddingTop: "235px",
-      paddingLeft: "80px",
+      paddingTop: "120px",
+      textAlign: "center"
       }}>
      
         It's your dream  <span 
@@ -45,7 +45,7 @@ function HomeContent () {
       sx={{
         display: "flex",
         justifyContent: "center",
-        marginTop: "170px",
+        marginTop: "190px",
         }}>
     
     <TextField
@@ -78,7 +78,7 @@ function HomeContent () {
     <Container disableGutters={true} maxWidth={false}
         sx={{
           display: "flex",
-          marginTop: "95px",
+          marginTop: "140px",
           textAlign: "center",
           justifyContent: "center"
           }}>
