@@ -30,7 +30,8 @@ function HomeContent () {
       fontFamily: "Poppins", 
       color: "#FFFFFF",
       paddingTop: "100px",
-      textAlign: "center"
+      textAlign: "center",
+      marginBottom: "0px"
       }}>
      
         It's your dream  <span 
